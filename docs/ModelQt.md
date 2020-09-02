@@ -6,7 +6,7 @@ The Qt Network module offers classes that allow you to write TCP/IP clients and 
 
 ## Using UDP with QUdpSocket
 
-￼![QUdpSocket](E:\yang66995\Qt_Dev\docs\DocResources\QUdpSocket.png)
+![wpjJED.png](https://s1.ax1x.com/2020/09/02/wpjJED.png)
 
 UDP (User Datagram Protocol) is a lightweight, unreliable, datagram-oriented, connectionless protocol. It can be used when reliability isn't important. For example, a server that reports the time of day could choose UDP. If a datagram with the time of day is lost, the client can simply make another request.//UDP(用户数据报协议)是一种轻量级的、不可靠的、面向数据的、无连接的协议。当可靠性不重要时，可以使用它。例如，报告一天时间的服务器可以选择UDP。如果一个包含时间的数据报丢失了，客户端可以简单地发出另一个请求。
 
