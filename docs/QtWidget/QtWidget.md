@@ -6,14 +6,15 @@
  * @Description: In User Settings Edit
  * @FilePath: \yang66995\qt_dev\docs\ModelQt.md
 -->
+# 基于Widget
 
-# Qt Network
+## Qt Network
 
-## Network Programming with Qt
+### Network Programming with Qt
 
 The Qt Network module offers classes that allow you to write TCP/IP clients and servers. It offers lower-level classes such as QTcpSocket, QTcpServer and QUdpSocket that represent low level network concepts, and high level classes such as QNetworkRequest, QNetworkReply and QNetworkAccessManager to perform network operations using common protocols. It also offers classes such as QNetworkConfiguration, QNetworkConfigurationManager and QNetworkSession that implement bearer management.
 
-## Using UDP with QUdpSocket
+### Using UDP with QUdpSocket
 
 ![wpjJED.png](https://s1.ax1x.com/2020/09/02/wpjJED.png)
 
