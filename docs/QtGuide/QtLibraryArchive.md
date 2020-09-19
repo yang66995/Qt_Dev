@@ -11,7 +11,7 @@
 
 ![Inqlude](https://s1.ax1x.com/2020/09/06/wZNmWQ.png)
 
-## 访问地址： 
+## 访问地址
 
 [https://inqlude.org/](https://inqlude.org/)
 
