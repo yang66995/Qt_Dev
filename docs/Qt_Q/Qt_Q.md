@@ -123,3 +123,21 @@ Example:
 | qfloat16   |                        | 2      |
 
 qfloat16是Qt中新增的一个类，用于表示16位浮点数，需包含类`<QFloat16>`。
+
+## 串口接收缓冲区问题
+
+缓冲区设置问题导致串口收数时几秒钟后无法再继续工作，422转USB指示灯同步停止闪烁，使用串口助手显示正常。
+```cpp
+void QSerialPort::setReadBufferSize(qint64 size);
+  
+Sets the size of QSerialPort's internal read buffer to be size bytes.
+If the buffer size is limited to a certain size, QSerialPort will not buffer more than this size of data. The special case of a buffer size of 0 means that the read buffer is unlimited and all incoming data is buffered. This is the default.
+This option is useful if the data is only read at certain points in time (for instance in a real-time streaming application) or if the serial port should be protected against receiving too much data, which may eventually cause the application to run out of memory.
+
+See also readBufferSize() and read().
+```
+```cpp
+mySerialPort->setReadBufferSize(4096);//设置串口缓冲区大小 根据实际工程需要设定
+    /*新三合一项目 串口发送20ms一次，一帧长度128个字节; 接收最快40ms一次，帧长度不超过60字节，这里1024空间足够*/
+    //lq 测试发现每次只接收到512字节，会把长字节分成几个512？512似乎是串口通信缓冲区的默认大小。由于影响不大，这个问题暂时搁置一下
+```cpp
